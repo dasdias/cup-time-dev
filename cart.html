@@ -39,12 +39,99 @@
     </div>
   </header>
   <main in class="main">
-    <div class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur corporis rem saepe totam quos fugit inventore possimus, minus doloribus! Cupiditate dolores doloribus nostrum enim dolor fugit minima error. Corporis!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur corporis rem saepe totam quos fugit inventore possimus, minus doloribus! Cupiditate dolores doloribus nostrum enim dolor fugit minima error. Corporis!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur corporis rem saepe totam quos fugit inventore possimus, minus doloribus! Cupiditate dolores doloribus nostrum enim dolor fugit minima error. Corporis!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur corporis rem saepe totam quos fugit inventore possimus, minus doloribus! Cupiditate dolores doloribus nostrum enim dolor fugit minima error. Corporis!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur corporis rem saepe totam quos fugit inventore possimus, minus doloribus! Cupiditate dolores doloribus nostrum enim dolor fugit minima error. Corporis!
+    <div class="cart">
+      <div class="container">
+        <div class="cart__container">
+          <div class="cart__content">
+            <h2 class="cart__title">Корзина (6)</h2>
+            <ul class="cart__list">
+              <li class="cart__list-item">
+                <article class="product cart-product">
+                  <img class="product__image" src="./image/photo-2.jpg" alt="Кокосовая матча">
+                  <div class="product__content">
+                    <h3 class="product__title">Кокосовая матча</h3>
+                    <div class="cart-product__count">
+                      <button class="cart-product__pluse">-</button>
+                      <span class="cart-product__num">2</span>
+                      <button class="cart-product__minus">+</button>
+                    </div>
+                    <div class="product__price">390 ₽</div>
+                  </div>
+                </article>
+              </li>
+              <li class="cart__list-item">
+                <article class="product cart-product">
+                  <img class="product__image" src="./image/photo-3.jpg" alt="Зеленый индонезийский чай">
+                  <div class="product__content">
+                    <h3 class="product__title">Зеленый индонезийский чай</h3>
+                    <div class="cart-product__count">
+                      <button class="cart-product__pluse">-</button>
+                      <span class="cart-product__num">2</span>
+                      <button class="cart-product__minus">+</button>
+                    </div>
+                    <div class="product__price">340 ₽</div>
+                  </div>
+                </article>
+              </li>
+              <li class="cart__list-item">
+                <article class="product cart-product">
+                  <img class="product__image" src="./image/photo-5.jpg" alt="Черный чай из Калифорнии">
+                  <div class="product__content">
+                    <h3 class="product__title">Черный чай из Калифорнии</h3>
+                    <div class="cart-product__count">
+                      <button class="cart-product__pluse">-</button>
+                      <span class="cart-product__num">2</span>
+                      <button class="cart-product__minus">+</button>
+                    </div>
+                    <div class="product__price">400 ₽</div>
+                  </div>
+                </article>
+              </li>
+              <li class="cart__list-item">
+                <article class="product cart-product">
+                  <img class="product__image" src="./image/photo-6.jpg" alt="Органическая веганская матча">
+                  <div class="product__content">
+                    <h3 class="product__title">Органическая веганская матча</h3>
+                    <div class="cart-product__count">
+                      <button class="cart-product__pluse">-</button>
+                      <span class="cart-product__num">2</span>
+                      <button class="cart-product__minus">+</button>
+                    </div>
+                    <div class="product__price">400 ₽</div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <form class="form" method="POST" action="#" id="cartForm">
+              <div class="form__tite">Доставка</div>
+              <div class="form__group-input">
+                <input class="form__tel" type="text" name="name" placeholder="Имя" />
+                <input class="form__phone" type="tel" name="phone" placeholder="Телефон" />
+                <input class="form__addr" type="text" name="Address" placeholder="Адрес" />
+              </div>
+              <div class="form__payment-title">Оплата:</div>
+              <div class="form__group-radio">
+                <label class="form__radio-label" for="cart-payment">
+                  <input class="form__payment" type="radio" name="payment" id="cart-payment" />
+                  <span></span>
+                  Картой
+                </label>
+                <label class="form__radio-label" for="cart-cach">
+                  <input class="form__cach" type="radio" name="payment" id="cart-cach" />
+                  <span></span>
+                  Наличные
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="cart__result-wrap">
+            <div class="cart__result">
+              <div class="cart__total">Итого: <br /> <span class="cart__price">2200 ₽</span></div>
+              <button form="cartForm" class="cart__btn" type="submit">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer class="footer">
